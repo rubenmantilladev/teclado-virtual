@@ -1,0 +1,78 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#keyboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 684px;
+  gap: 5px;
+  margin: 1rem auto;
+  background: #a7a4a4;
+  padding: 1rem 1.8rem;
+  border-radius: 5px;
+}
+
+.layer {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  width: 100%;
+}
+
+.key {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* Altura de todas las teclas */
+  height: 70px;
+}
+
+.key-normal {
+  width: 50px;
+}
+
+.key-mayus {
+  width: 120px;
+}
+
+.key-shift {
+  width: 80px;
+}
+
+.key-space {
+  width: 400px;
+}
+
+.key-empty {
+  width: 25px;
+  height: 70px;
+  visibility: hidden;
+  color: #fff;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.key:hover {
+  background-color: #444;
+}
+
+.activated {
+  background: #555;
+}
+
+.input {
+  width: 300px;
+  display: block;
+  margin: 30px auto 0;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
